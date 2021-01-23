@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+$gradient-color:    linear-gradient(90deg, rgba(158,40,40,1) 44%, rgba(31,71,22,1) 79%);
+$main-font:'Raleway', sans-serif;
+
+
+@mixin mq($breakpoint) {
+
+    // $breakpoint is simply a variable that can have several values
+
+    @if $breakpoint==tablet {
+
+        // here `laptop` is the value of $breakpoint
+        // when call laptop, we mean the following piece of code        
+
+    @media only screen and (min-width: 765px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==laptop {
+    @media only screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+}

@@ -73,7 +73,7 @@ li {
 }
 
 .container header nav {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,6 +205,10 @@ li {
 
 .container main .hero .hero-top h1 {
   font-size: 2rem;
+}
+
+.container main .hero .hero-top h3 {
+  font-size: 1.5rem;
 }
 
 @media only screen and (min-width: 765px) {
